@@ -9,20 +9,24 @@
   <body>
     <section>
       <form action="/next" method="post">
-        <label for="name">Username</label>
-        <input type="text" id="fullname" required />
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="name">Username</label>
+          <input type="text" id="fullname" placeholder="Enter Username" required />
 
-        <label for="email">Email Address</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@example.com"
-          required
-        />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+          />
 
-        <label for="password">Password</label>
-        <input type="password" required />
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter Password" required />
+        </fieldset>
+        
 
         <fieldset>
           <legend>Feedback Categories</legend>
@@ -40,7 +44,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Preferred Contact Method:</legend>
+          <legend>Preferred Contact Method</legend>
           <label for="email-contact">
             <input
               type="radio"
@@ -78,7 +82,7 @@
             <textarea name="comments" id="comments" placeholder="Add your comments here"></textarea>
         </div>
 
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" class="small-button">
       </form>
     </section>
   </body>

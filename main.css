@@ -8,3 +8,12 @@ form {
 fieldset label {
     display: flex;
 }
+
+.small-button {
+    width: 100px;
+    height: 25px;
+}
+
+fieldset {
+    width: 200px;
+}
